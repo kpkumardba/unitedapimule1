@@ -1,0 +1,94 @@
+2./customer/custid=1234
+5. APP API resource not found 
+6.#[payload =='US']
+7. install the dependency to local maven repository 
+8. payload N quantity variable   
+15. center for enablement 
+16. [1,2,3,4]
+17. 4 private flows
+21. (http request to child flow )
+     payload
+22./orders:
+	/{orderId}:
+	    get:
+
+23. 20,40,60 ?? 
+24.Empty Array 
+25. error in main flow 
+26. string 
+29. gather the list of requirments to secure the API
+30. ARRAY (o/p type of DataWave map operator )
+31. summary statistics with NO record data 
+32.
+ 
+    types:
+	plan: ! include ACME/Datatypes/PlanDataTypes.raml
+    /plans :
+      get:
+	responses:
+	 200:
+	  body:
+	     application/json:
+		type: plan[]
+		exmple: ! include ../../PlanExample.raml
+
+33. the file stays in the same folder unchanged 
+
+34. include project modules and dependencies [ MySql DB is being deployed to Cloud hub ]
+35.Mule event 
+36. Response body: "error"
+    Default response status code: 200
+37.{employeeID}
+38. validation error 
+39. set request content-type to application/json 
+40. import modules::Utility 
+	Utility::pascalize("max mule")
+41. /*
+42. fun addKV ( object: object, key: string , value: any) =
+	object ++{(key):value}
+-----------------
+  addKV({hello:"world"},"hola","mundo")
+
+43. key/value pairs in the ObjectStore 
+44. success - main flow 
+45. nothing needs to be changed in the other APIs or their associated applications 
+46.(values accessible in child flow )
+	payload
+	quantity var
+	color query param
+47.$(db.username)
+48. 3
+49. route 1 
+
+
+
+50.
+orders:
+{  
+ ( payload map { (value,index) ->
+	item:{
+	   itemName: value.item,
+	   total: value.price * value.quantity 
+	     }
+		}
+  )
+}
+
+51. the original json request body  
+52. publish the API specification to Anypoint Exchange
+53.
+    payload.order.*item map ((value,index) -> {
+	index: index,
+	orderId:value.@orderId,
+	itemName:value.item,
+	lineItemPrice: (value.price as Number) * (value.quantity as Number) 
+					       }
+			     )
+
+54. set the ObjectStore to store the last retrieved order_id value
+55. modify the API implementation to use auto discovery to register with API Manager
+56. specify global error handler at the " global element " inorder to catch all errors from flows which do not have error handlers  
+57. "a global element " property placeholder configuration file location needs to be specified 
+58. restart the API  proxy to clear the API policy cache
+59. #[payload]
+60. save the payload from Database SELECT operation oto a variable  
